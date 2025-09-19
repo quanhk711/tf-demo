@@ -1,0 +1,23 @@
+# Example YAML configuration for Terraform modules
+modules:
+  - name: weather-app
+    source: github.com/cloudposse/atmos//examples/demo-stacks/components/terraform/myapp
+    version: main
+    variables:
+      stage: dev
+      location: New York
+      options: 0T
+      format: v2
+      lang: en
+      units: m
+
+  - name: weather-app-2
+    source: github.com/cloudposse/atmos//examples/demo-stacks/components/terraform/myapp
+    version: main
+    variables:
+      stage: dev
+      location: New York
+      options: 0T
+      format: v2
+      lang: en
+      units: m
